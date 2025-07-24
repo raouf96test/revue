@@ -167,7 +167,105 @@ body {
 }
 
 /* --- FOOTER --- */
-International Journal of Management & Strategy 2025
+.site-footer {
+  background: #1565c0;
+  color: #fff;
+  padding: 0;
+  border-radius: 0;
+  margin-top: 40px;
+  box-shadow: 0 -1px 4px rgba(0,0,0,0.03);
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 24px 40px 10px 40px;
+  min-height: 120px;
+  position: relative;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-btn {
+  background: #ffd600;
+  color: #1565c0;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 18px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.2s;
+}
+.contact-btn:hover {
+  background: #fff176;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+.footer-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.footer-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 180px;
+}
+
+.archive-btn {
+  background: #fff;
+  color: #1565c0;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 24px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+.archive-btn:hover {
+  background: #ffd600;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0 8px 0;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  font-size: 1.1em;
+  background: #1565c0;
+  color: #fff;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 900px) {
+  .page-layout {
+    flex-direction: column;
+    max-width: 99vw;
+    padding: 12px;
+  }
   .sidebar {
     width: 100%;
     margin-bottom: 18px;
@@ -185,5 +283,18 @@ International Journal of Management & Strategy 2025
   }
   .header-top {
     padding: 10px 10px 0 10px;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 10px 6px 10px;
+  }
+  .footer-left {
+    align-items: center;
+    margin-bottom: 18px;
+  }
+  .footer-center {
+    justify-content: center;
+    margin: 10px 0 0 0;
   }
 }
