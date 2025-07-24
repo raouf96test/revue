@@ -276,6 +276,11 @@ header .main-nav a {
   text-align: center;       /* ← centre le texte */
   min-width: 180px;
 }
+.footer-center h4,
+.footer-center ul {
+  margin-top: 0;
+  padding-top: 0;
+}
 
 
 .footer-bottom {
