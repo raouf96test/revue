@@ -306,3 +306,25 @@ body {
     margin: 10px 0 0 0;
   }
 }
+/* === LAYOUT : sidebar full-height & contenu à droite === */
+.page-layout {
+  display: flex;            /* aligner sidebar + main-content en ligne */
+  flex-wrap: nowrap;        /* interdire le passage à la ligne */
+  align-items: flex-start;  /* démarrer en haut */
+  flex: 1;                  /* prendre tout l’espace vertical dispo */
+}
+
+.sidebar {
+  flex-shrink: 0;           /* ne pas rétrécir */
+  width: 230px;             /* ta largeur fixe */
+  height: 100vh;            /* full viewport height */
+  position: sticky;         /* reste visible au scroll */
+  top: 0;                   /* collée en haut de la page */
+  margin-right: 30px;       /* garde ton espacement */
+  /* supprime min-height:450px si présent */
+}
+
+.main-content {
+  flex: 1;                  /* prend tout le reste de la largeur */
+  /* ton padding / background actuels */
+}
