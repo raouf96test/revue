@@ -126,16 +126,25 @@ body {
 }
 
 /* --- LAYOUT (wrapper) --- */
-.layout-container,
-.page-layout {
+/* --- LAYOUT --- */
+.layout-container {
   display: flex;
   align-items: flex-start;
-  flex-wrap: nowrap;
-  margin: 0 auto;
-  max-width: 1200px;
+  width: 100%;        /* passer de max-width centré à pleine largeur */
+  margin: 0;          /* supprimer le margin auto */
   padding: 24px 0;
-  flex: 1;
 }
+
+.main-content {
+  flex: 1;
+  max-width: 960px;   /* fixer la largeur max du contenu */
+  margin: 0 auto;     /* centrer le main à droite de la sidebar */
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px 36px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.04);
+}
+
 
 /* --- SIDEBAR --- */
 .sidebar {
