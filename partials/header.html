@@ -1,27 +1,22 @@
-<header class="site-header">
-  <div class="header-top">
-    <div class="header-spacer"></div>
-    <div class="logo-home">
-      <a href="index.html">
-        <img src="assets/Logo.png" alt="Journal Logo" class="logo-img">
-      </a>
-      <a href="index.html" class="home-link">Home</a>
-    </div>
-  </div>
-  <div class="header-title-block">
-    <h1>International Journal of Management & Strategy</h1>
-    <p class="journal-subtitle">
-      <span>Biannual emission</span>
-      <span>• ISSN</span>
-      <span>• Double blind submission</span>
-    </p>
-  </div>
-  <nav class="main-nav">
-    <ul>
-      <li><a href="#">Submit</a></li>
-      <li><a href="#">Editorial Board</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+.header-title-block {
+  text-align: center;
+  padding: 0 40px 0 40px;
+  margin-top: 10px;
+}
+
+.header-title-block h1 {
+  margin: 0 0 8px 0;
+  font-size: 2rem;
+  font-weight: 700;
+  /* Pour forcer le centrage même si le parent est flex, on peut ajouter: */
+  width: 100%;
+  display: block;
+}
+
+.journal-subtitle {
+  display: flex;
+  gap: 32px;
+  font-size: 1.1em;
+  color: #444;
+  justify-content: center;
+}
