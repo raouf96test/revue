@@ -269,14 +269,8 @@ header .main-nav a {
 
 .footer-center {
   align-self: flex-start;
-  flex: 1;
-  display: flex;
-  flex-direction: column;   /* ← empile le titre et la liste verticalement */
-  justify-content: flex-start;
-  align-items: center;      /* ← centre horizontalement */
-  text-align: center;       /* ← centre le texte */
-  min-width: 180px;
 }
+
 .footer-center h4,
 .footer-center ul {
   margin-top: 0;
