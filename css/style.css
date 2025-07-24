@@ -225,8 +225,11 @@ body {
 }
 
 .footer-left {
+  flex: 0 0 230px;        /* colonne fixe à 230px */
   display: flex;
   flex-direction: column;
+  align-items: flex-start; /* texte et boutons collés à gauche */
+  gap: 14px;
 }
 
 .contact-btn,
