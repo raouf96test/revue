@@ -270,10 +270,13 @@ header .main-nav a {
 .footer-center {
   flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;   /* ← empile le titre et la liste verticalement */
+  justify-content: flex-start;
+  align-items: center;      /* ← centre horizontalement */
+  text-align: center;       /* ← centre le texte */
   min-width: 180px;
 }
+
 
 .footer-bottom {
   width: 100%;
