@@ -43,7 +43,6 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  justify-content: space-between; /* ← espace entre logo et bouton */
   padding: 4px 10px;
   margin-bottom: 8px; /* ← réduit l’espace sous le logo/home */
    background-color: rgba(255, 0, 0, 0.1);
