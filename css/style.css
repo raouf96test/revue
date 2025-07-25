@@ -224,9 +224,7 @@ header .main-nav a {
 .footer-left,
 .footer-center,
 .footer-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* ← centre verticalement le contenu */
+  border: 1px dashed red;
 }
 
 
