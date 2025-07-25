@@ -270,15 +270,14 @@ header .main-nav a {
 }
 
 .footer-center {
-  flex: 0 0 auto; /* empêche le bloc de s'étirer verticalement */
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
-  margin-top: 0; /* supprime tout décalage vertical */
+  align-items: center; /* ← centrage horizontal */
+  margin-top: 0;
+  text-align: center;   /* ← centrage du texte */
 }
-
-
 .footer-center h4,
 .footer-center ul,
 .footer-center li {
