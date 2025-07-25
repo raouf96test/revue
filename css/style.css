@@ -39,14 +39,14 @@ body {
   box-shadow: 0 2px 6px rgba(0,0,0,0.06);
 }
 
+/* Top section: logo + home */
 .header-top {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 4px 10px;
-  margin-bottom: 8px; /* ← réduit l’espace sous le logo/home */
-   background-color: rgba(255, 0, 0, 0.1);
-}
+  margin-bottom: 8px; /* réduit l’espace sous le logo/home */
+  background-color: rgba(255, 0, 0, 0.1); /* debug background */
 }
 
 .logo-home {
@@ -55,24 +55,23 @@ body {
   gap: 16px;
 }
 
-.home-button {
-  padding: 4px 8px;
-  font-size: 14px;
-}
-
 .logo-img {
   width: 100px;
+  height: auto;
 }
 
+/* Home link styled as button */
 .home-link {
   font-size: 14px;
   text-decoration: none;
   color: #333;
+  background-color: #fff;
   padding: 8px 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-
 
 .home-link:hover {
   background: var(--color-accent);
@@ -80,8 +79,9 @@ body {
   text-decoration: underline;
 }
 
+/* Title block */
 .header-title-block {
-  margin-top: 0; /* ← supprime tout espace inutile au-dessus du titre */
+  margin-top: 0;
   text-align: center;
   padding: 10px 40px;
   width: 100%;
@@ -103,6 +103,7 @@ body {
   font-weight: 500;
 }
 
+/* Navigation */
 .main-nav {
   display: flex;
   justify-content: center;
@@ -112,7 +113,7 @@ body {
 .main-nav ul {
   list-style: none;
   display: flex;
-  gap: 32px; /* espace entre les liens */
+  gap: 32px;
   margin: 0;
   padding: 0;
 }
@@ -126,8 +127,9 @@ body {
 }
 
 .main-nav a:hover {
-  color: #ffffff; /* couleur au survol */
+  color: #ffffff;
 }
+
 
 
 /* --- LAYOUT (wrapper) --- */
