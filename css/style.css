@@ -214,9 +214,10 @@ header .main-nav a {
   margin-top: 40px;
 }
 
-.footer-content {
+.footer-row {
   display: flex;
   align-items: stretch; /* ← toutes les colonnes auront la même hauteur */
+  padding: 24px 40px 10px;
 }
 
 .footer-left,
