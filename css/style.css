@@ -55,6 +55,11 @@ body {
   gap: 16px;
 }
 
+.home-button {
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
 .logo-img {
   width: 100px;
 }
