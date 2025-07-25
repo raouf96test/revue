@@ -215,11 +215,9 @@ header .main-nav a {
 }
 
 .footer-content {
-  display: flex;
+ display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* aligne tous les blocs en haut */
-  padding: 24px 40px 10px;
-  gap: 20px; /* ajoute un espacement horizontal si besoin */
+  align-items: center;   /* centre chaque colonne sur l’axe vertical */
 }
 
 .footer-left {
