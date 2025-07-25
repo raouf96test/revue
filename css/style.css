@@ -215,10 +215,20 @@ header .main-nav a {
 }
 
 .footer-content {
- display: flex;
+  display: flex;
+  align-items: stretch; /* ← toutes les colonnes auront la même hauteur */
   justify-content: space-between;
-  align-items: center;   /* centre chaque colonne sur l’axe vertical */
+  padding: 24px 40px 10px;
 }
+
+.footer-left,
+.footer-center,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* ← centre verticalement le contenu */
+}
+
 
 .footer-left {
   flex: 0 0 230px;        /* colonne fixe à 230px */
