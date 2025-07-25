@@ -216,8 +216,10 @@ header .main-nav a {
 
 .footer-content {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* aligne tous les blocs en haut */
   padding: 24px 40px 10px;
-  align-items: flex-start;
+  gap: 20px; /* ajoute un espacement horizontal si besoin */
 }
 
 .footer-left {
@@ -268,14 +270,13 @@ header .main-nav a {
 }
 
 .footer-center {
-  flex: 1;
+  flex: 0 0 auto; /* empêche le bloc de s'étirer verticalement */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-  text-align: center;
-  align-self: flex-start;
-  height: auto;
+  align-items: flex-start;
+  margin-top: 0; /* supprime tout décalage vertical */
+}
 }
 
 .footer-center h4,
