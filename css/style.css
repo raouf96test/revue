@@ -217,13 +217,20 @@ header .main-nav a {
 .footer-row {
   display: flex;
   align-items: stretch; /* ← toutes les colonnes auront la même hauteur */
-  gap: 100px; /* ← espace entre les colonnes */
   padding: 24px 40px 10px;
 }
 
-.footer-left,
-.footer-center,
+.footer-left {
+  margin-right: 60px;
+}
+
+.footer-center {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
 .footer-right {
+  margin-left: 60px;
 }
 
 
