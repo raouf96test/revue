@@ -9,6 +9,8 @@ body {
   color: white;
   padding-bottom: 10px;
    border-top: 2px solid #CCC;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .top-bar {
@@ -133,6 +135,8 @@ body {
   font-family: Arial, sans-serif;
   padding: 20px;
   border-top: 2px solid #CCC;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 /* === Main Content === */
 .main-content {
