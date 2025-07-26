@@ -87,7 +87,7 @@
   <script src="load-layout.js"></script>
   <script>
   document.addEventListener("DOMContentLoaded", () => {
-    fetch("/parials header.html")
+    fetch("partials/header.html")
       .then(res => res.text())
       .then(data => {
         document.getElementById("header-container").innerHTML = data;
