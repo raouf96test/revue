@@ -2,20 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>For Authors – International Journal of Management & Strategy</title>
+  <title>Authors International Journal of Management & Strategy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link to your stylesheet -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- JavaScript files -->
   <script src="js/include.js" defer></script>
+  <script src="js/main.js" defer></script>
 </head>
 <body>
 
-  <!-- Header Include -->
-  <div data-include="partials/header.html"></div>
+  <!-- Header (loaded dynamically) -->
+  <div id="header-container"></div>
 
-  <!-- Layout with Sidebar and Main Content -->
-  <div class="layout">
-    <!-- Sidebar Include -->
-    <div data-include="partials/sidebar.html"></div>
-
+  <!-- Layout: Sidebar + Main Content -->
+ <div class="layout">
+  <nav class="journal-sidebar" id="sidebar">
+    <!-- Sidebar content will be loaded here -->
+  </nav>
+    <main class="main-content">
+      <!-- Your page content here -->
     <!-- Main Content Written Directly Here -->
     <div class="main-content">
       <main class="authors-page">
