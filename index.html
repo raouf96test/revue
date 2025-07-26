@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>International Journal of Management & Strategy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link to your stylesheet -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- JavaScript files -->
   <script src="js/include.js" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 <body>
 
   <!-- Header (loaded dynamically) -->
-  <div id="header"></div>
+  <div id="header-container"></div>
 
   <div class="container">
     <!-- Sidebar (loaded dynamically) -->
@@ -41,13 +46,31 @@
   </div>
 
   <!-- Footer (loaded dynamically) -->
-  <div id="footer"></div>
-<script>
-  fetch('partials/header.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('header-container').innerHTML = data;
-    });
-</script>
+  <div id="footer-container"></div>
+
+  <!-- Load header, sidebar, and footer dynamically -->
+  <script>
+    // Load header
+    fetch('partials/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+
+    // Load sidebar
+    fetch('partials/sidebar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('sidebar').innerHTML = data;
+      });
+
+    // Load footer
+    fetch('partials/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      });
+  </script>
+
 </body>
 </html>
