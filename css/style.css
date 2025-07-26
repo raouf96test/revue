@@ -261,33 +261,3 @@ body {
 .contact-form button:hover {
   background-color: #e6c200;
 }
-.layout-container {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-
-/* Sidebar */
-.journal-sidebar {
-  width: 250px;
-  flex-shrink: 0;
-  margin-right: 20px;
-  background-color: #f9f9f9;
-  padding: 10px;
-}
-
-/* Main Content */
-.authors-page {
-  flex: 1;
-}
-
-/* Footer */
-.site-footer {
-  clear: both;
-  width: 100%;
-  margin-top: 40px;
-  background-color: #eee;
-  padding: 20px;
-  text-align: center;
-}
-
