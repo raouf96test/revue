@@ -39,5 +39,20 @@
   <div id="footer-container"></div>
 
   <script src="load-layout.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header-container").innerHTML = data;
+      });
+
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-container").innerHTML = data;
+      });
+  });
+</script>
 </body>
 </html>
