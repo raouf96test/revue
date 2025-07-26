@@ -86,12 +86,19 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
+.layout {
+  display: flex;
+  min-height: 100vh;
+  }
 .journal-sidebar {
   background-color: #005A9C;
   padding: 20px;
   width: 250px;
   font-family: Arial, sans-serif;
-   border-right: 1px dashed #999;
+  border-right: 1px dashed #999;
+  flex-shrink: 0;
+  height: 100vh; /* Full height */
+  box-sizing: border-box;
 }
 
 .journal-sidebar h3 {
@@ -123,6 +130,12 @@ body {
   color: white;
   font-family: Arial, sans-serif;
   padding: 20px;
+}
+/* === Main Content === */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
 }
 
 .footer-content {
