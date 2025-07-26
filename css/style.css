@@ -86,3 +86,34 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
+.journal-sidebar {
+  background-color: #f5f5f5;
+  padding: 20px;
+  width: 250px;
+  font-family: Arial, sans-serif;
+}
+
+.journal-sidebar h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #005A9C;
+}
+
+.journal-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.journal-sidebar li {
+  margin: 10px 0;
+}
+
+.journal-sidebar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.journal-sidebar a:hover {
+  color: #005A9C;
+}
