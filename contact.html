@@ -87,13 +87,13 @@
   <script src="load-layout.js"></script>
   <script>
   document.addEventListener("DOMContentLoaded", () => {
-    fetch("header.html")
+    fetch("/parials header.html")
       .then(res => res.text())
       .then(data => {
         document.getElementById("header-container").innerHTML = data;
       });
 
-    fetch("footer.html")
+    fetch("/partials footer.html")
       .then(res => res.text())
       .then(data => {
         document.getElementById("footer-container").innerHTML = data;
