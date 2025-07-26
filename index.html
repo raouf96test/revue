@@ -1,49 +1,47 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | IJMS</title>
+  <meta charset="UTF-8">
+  <title>International Journal of Management & Strategy</title>
   <link rel="stylesheet" href="css/style.css">
-
-  <!-- Chargement différé pour être sûr que le DOM est prêt -->
+  <script src="js/include.js" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 <body>
 
-  <!-- Header -->
-  <div data-include="partials/header.html"></div>
+  <!-- Header (loaded dynamically) -->
+  <div id="header"></div>
 
-  <!-- Layout principal (sidebar + contenu) -->
-  <div class="layout-container">
-    
-    <!-- Sidebar -->
-    <div data-include="partials/sidebar.html" class="sidebar-container"></div>
-<div class="page-layout">
- 
-  <section class="main-content">
-    <div class="content-wrapper">
-      … votre contenu de page …
-    </div>
-  </section>
-</div>
+  <div class="container">
+    <!-- Sidebar (loaded dynamically) -->
+    <aside id="sidebar"></aside>
 
-    <!-- Contenu principal -->
-    <main class="main-content">
-      <h2>Articles</h2>
-      <ol class="article-list">
-        <li><strong>1—</strong></li>
-        <li><strong>2—</strong></li>
-        <li><strong>3—</strong></li>
-      </ol>
-      <div class="image-section">
-        <img src="strategy-journal.jpg" alt="Strategy Journal" />
-      </div>
+    <!-- Main Content -->
+    <main>
+      <section class="intro">
+        <h1>Welcome to the International Journal of Management & Strategy</h1>
+        <p>Explore our latest research articles and strategic insights.</p>
+      </section>
+
+      <section class="articles">
+        <h2>Latest Articles</h2>
+        <ul>
+          <li>Article 1: Strategic Planning in Emerging Markets</li>
+          <li>Article 2: Leadership Models for Global Teams</li>
+          <li>Article 3: Innovation and Competitive Advantage</li>
+        </ul>
+      </section>
+
+      <section class="featured-book">
+        <h2>Featured Book</h2>
+        <img src="assets/images/strategy-journal.png" alt="The Strategy Journal by Kris Safarova">
+        <p><em>The Strategy Journal</em> by Kris Safarova — a practical guide to strategic thinking.</p>
+      </section>
     </main>
   </div>
 
-  <!-- Footer -->
-  <div data-include="partials/footer.html"></div>
+  <!-- Footer (loaded dynamically) -->
+  <div id="footer"></div>
+
 </body>
 </html>
