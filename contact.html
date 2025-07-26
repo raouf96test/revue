@@ -1,104 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    .contact-page {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
 
-.contact-page h2 {
-  text-align: center;
-  margin-bottom: 24px;
-  font-size: 1.8rem;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.contact-form label {
-  font-weight: 600;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1em;
-}
-
-.contact-form button {
-  padding: 10px 16px;
-  background-color: var(--color-accent);
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background-color: var(--color-primary);
-}
-
-  </style> 
+  <!-- ✅ CSS global -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Header will be loaded dynamically -->
+  <!-- ✅ Header chargé dynamiquement -->
   <div id="header-container"></div>
 
-  <main class="contact-page">
-    <h2>Contact Us</h2>
-    <form class="contact-form">
-      <label for="full-name">Full Name *</label>
-      <input type="text" id="full-name" name="full-name" required>
+  <div class="layout-container">
+    <!-- ✅ Sidebar -->
+    <aside class="sidebar">
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">À propos</a></li>
+      </ul>
+    </aside>
 
-      <label for="email">Email *</label>
-      <input type="email" id="email" name="email" required>
+    <!-- ✅ Main content -->
+    <main class="main-content">
+      <h1>Contactez-nous</h1>
+      <p>Pour toute question, suggestion ou collaboration, n’hésitez pas à nous écrire.</p>
 
-      <label for="title">Title</label>
-      <input type="text" id="title" name="title">
+      <form>
+        <label for="name">Nom :</label><br />
+        <input type="text" id="name" name="name" /><br /><br />
 
-      <label for="institution">Institution</label>
-      <input type="text" id="institution" name="institution">
+        <label for="email">Email :</label><br />
+        <input type="email" id="email" name="email" /><br /><br />
 
-      <label for="subject">Subject *</label>
-      <input type="text" id="subject" name="subject" required>
+        <label for="message">Message :</label><br />
+        <textarea id="message" name="message" rows="6"></textarea><br /><br />
 
-      <label for="message">Message *</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
+        <button type="submit" class="contact-btn">Envoyer</button>
+      </form>
+    </main>
+  </div>
 
-      <button type="submit">Send Message</button>
-    </form>
-  </main>
-
-  <!-- Footer will be loaded dynamically -->
+  <!-- ✅ Footer chargé dynamiquement -->
   <div id="footer-container"></div>
 
-  <script src="load-layout.js"></script>
+  <!-- ✅ JavaScript pour charger header et footer -->
   <script>
-  document.addEventListener("DOMContentLoaded", () => {
+    // Charger le header
     fetch("partials/header.html")
-      .then(res => res.text())
+      .then(response => response.text())
       .then(data => {
         document.getElementById("header-container").innerHTML = data;
       });
 
+    // Charger le footer
     fetch("partials/footer.html")
-      .then(res => res.text())
+      .then(response => response.text())
       .then(data => {
         document.getElementById("footer-container").innerHTML = data;
       });
-  });
-</script>
+  </script>
 </body>
 </html>
