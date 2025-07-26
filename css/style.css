@@ -91,9 +91,9 @@ body {
   padding: 20px;
   width: 250px;
   font-family: Arial, sans-serif;
-   border-top: 2px solid #ccc
-   border-bottom: 2px solid #ccc
-   border-right: 2px solid #ccc
+   border-top: 5px solid #000000
+   border-bottom: 5px solid #000000
+   border-right: 5px solid #000000
 }
 
 .journal-sidebar h3 {
