@@ -1,67 +1,59 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact</title>
-
-  <!-- ✅ CSS global -->
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <title>Contact Us – International Journal of Management & Strategy</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/include.js" defer></script>
 </head>
 <body>
 
-  <!-- ✅ Header dynamique -->
-  <header id="header-placeholder"></header>
+  <!-- Header -->
+  <div id="header-container"></div>
 
-  <div class="layout-container">
-    <!-- ✅ Sidebar -->
-    <aside class="sidebar">
-      <h2>Navigation</h2>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="#">À propos</a></li>
-      </ul>
-    </aside>
+  <!-- Contact Form -->
+  <main class="contact-page">
+    <h1>Contact Us</h1>
+    <form class="contact-form">
+      <label for="fullname">Full Name<span class="required">*</span></label>
+      <input type="text" id="fullname" name="fullname" required>
 
-    <!-- ✅ Main content -->
-    <main class="main-content">
-      <h1>Contactez-nous</h1>
-      <p>Pour toute question, suggestion ou collaboration, n’hésitez pas à nous écrire.</p>
+      <label for="email">Email<span class="required">*</span></label>
+      <input type="email" id="email" name="email" required>
 
-      <form>
-        <label for="name">Nom :</label><br />
-        <input type="text" id="name" name="name" /><br /><br />
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title">
 
-        <label for="email">Email :</label><br />
-        <input type="email" id="email" name="email" /><br /><br />
+      <label for="institution">Work Institution</label>
+      <input type="text" id="institution" name="institution">
 
-        <label for="message">Message :</label><br />
-        <textarea id="message" name="message" rows="6"></textarea><br /><br />
+      <label for="subject">Subject<span class="required">*</span></label>
+      <input type="text" id="subject" name="subject" required>
 
-        <button type="submit" class="contact-btn">Envoyer</button>
-      </form>
-    </main>
-  </div>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6"></textarea>
 
-  <!-- ✅ Footer dynamique -->
-  <footer id="footer-placeholder"></footer>
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
 
-  <!-- ✅ JavaScript -->
+  <!-- Footer -->
+  <div id="footer-container"></div>
+
+  <!-- Load header and footer -->
   <script>
-    // Charger le header
-    fetch("partials/header.html")
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById("header-placeholder").innerHTML = html;
+    fetch('partials/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
       });
 
-    // Charger le footer
-    fetch("partials/footer.html")
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById("footer-placeholder").innerHTML = html;
+    fetch('partials/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
       });
   </script>
+
 </body>
 </html>
