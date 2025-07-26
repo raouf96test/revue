@@ -8,6 +8,7 @@ body {
   background-color: #005A9C;
   color: white;
   padding-bottom: 10px;
+   border-top: 2px solid #CCC;
 }
 
 .top-bar {
@@ -99,6 +100,7 @@ body {
   flex-shrink: 0;
   height: 100vh; /* Full height */
   box-sizing: border-box;
+  border-right: 2px solid #CCC;
 }
 
 .journal-sidebar h3 {
@@ -130,6 +132,7 @@ body {
   color: white;
   font-family: Arial, sans-serif;
   padding: 20px;
+  border-top: 2px solid #CCC;
 }
 /* === Main Content === */
 .main-content {
